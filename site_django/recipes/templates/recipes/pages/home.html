@@ -2,16 +2,8 @@
 
 
 <body>
-    <header class="main-header-container">
-        <div class="main-header container">
-            <h1>
-                <a href="/">
-                    <i class=" fas fa-solid fa-envelope"></i>
-                    <span>Recipes {{name}}</span>
-            </h1>
-                </a>
-        </div>
-    </header>
+    {% include 'recipes/partials/header.html' %}
+     {% include 'recipes/partials/search.html' %}
 </body>
 
 </html>
