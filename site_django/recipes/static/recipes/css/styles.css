@@ -240,6 +240,18 @@ h6 {
     filter: brightness(2);
 }
 
+.main-content-detail .recipe-list-item {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+.main-content-detail  .recipe-list-item:hover {
+    transform: scale(1.02);
+    box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.5);
+
+}
+
+
 .main-footer {
     display: flex;
     align-items: center;
