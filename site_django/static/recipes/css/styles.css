@@ -170,7 +170,6 @@ h6 {
 
 .recipe-list-item {
     max-width: 43rem;
-    height: fit-content;
 }
 
 .recipe-list-item:hover {
