@@ -4,7 +4,7 @@ from faker import Faker
 
 
 def rand_ratio():
-    return randint(840, 900), randint(473, 573)
+    return randint(1130, 1280), randint(720, 780)
 
 
 fake = Faker('pt_BR')
@@ -29,7 +29,7 @@ def make_recipe():
             'name': fake.word()
         },
         'cover': {
-            'url': 'https://loremflickr.com/{}/{}{}'.format(*rand_ratio(), '/food'),
+            'url': 'https://loremflickr.com/{}/{}{}'.format(*rand_ratio(), '/cook'),
         }
 
     }
