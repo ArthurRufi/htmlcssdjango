@@ -252,6 +252,9 @@ h6 {
 
 }
 
+.preparetion-steps{
+     padding: var(--spacing-gutter-medium);
+}
 
 .main-footer {
     display: flex;
