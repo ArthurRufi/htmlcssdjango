@@ -7,12 +7,12 @@ def home(request):
     recipes = Recipe.objects.filter(is_publish = True).order_by('-id')
     return render(request, 'recipes/pages/home.html', context={
         'recipes': recipes,
-        'is_detail_page':True,
+        'is_detail_page':False,
     })
 
 def recipe(request, id):
     return render(request, 'recipes/pages/recipe-view.html', context={
-        'recipes': [make_recipe() for _ in range(1)],
+        'recipes': Recipe.objects.filter(pk=id, is_publish = True).order_by('-id'),
         'is_detail_page': True
         
 
