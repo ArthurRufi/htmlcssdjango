@@ -1,14 +1,8 @@
 from random import randint
 
-from faker import Faker
-
 
 def rand_ratio():
     return randint(1130, 1280), randint(720, 780)
-
-
-fake = Faker('pt_BR')
-# print(signature(fake.random_number))
 
 
 def make_recipe():
